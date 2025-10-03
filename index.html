@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="con-textual"/>
+  <meta property="og:description" content="VaPR – Vision-language Preference alignment for Reasoning"/>
+  <meta property="og:url" content="https://vap-r.github.io/vap-r/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="con-textual">
+  <meta name="twitter:description" content="VaPR – Vision-language Preference alignment for Reasoning">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>VaPR</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">-->
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title is-bold">
+              <img src="static/images/vapr.png" style="width:5em;vertical-align: middle" alt="Logo">
+              <!-- <span class="contextual" style="vertical-align: middle">ConTextual</span> -->
+            </h1>
+            <h2  class="subtitle is-3 publication-subtitle" >
+              <strong>VaPR</strong> – <strong>V</strong>ision-language <strong>P</strong>reference alignment for <strong>R</strong>easoning
+            </h2>
+            <h3><strong>Accepted at COLM 2025 </strong>🎉</h3>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+            <!-- Paper authors -->
+                <span class="author-block">
+                <span class="author-block">
+                  <span class="author-block">
+                    <a href="https://www.linkedin.com/in/rohan-wadhawan" target="_blank">Rohan Wadhawan</a><sup>*</sup><sup>1</sup>,&nbsp;</span>
+                  <a href="https://fabrice.harel-canada.com/" target="_blank">Fabrice Harel-Canada</a><sup>1</sup>,&nbsp;</span>
+                    <a href="https://zdou0830.github.io/" target="_blank">Zi-Yi Dou</a><sup>1</sup>,&nbsp;</span>
+
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/suhailashakiah" target="_blank">Suhaila Shakiah</a><sup>2</sup>,&nbsp;</span>
+                  <span class="author-block">
+                  <a href="https://www.linkedin.com/in/rpiramuthu/" target="_blank">Robinson Piramuthu</a><sup>2</sup>,&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://violetpeng.github.io/" target="_blank">Nanyun Peng</a><sup>1</sup>&nbsp;</span>
+                </div>
+
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><sup>1</sup>Department of Computer Science, University of California Los Angeles&nbsp;&nbsp;</span>
+                </div>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><sup>2</sup>Amazon.com Inc.&nbsp;&nbsp;</span>
+                </div>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><sup>*</sup>Corresponding Author&nbsp;&nbsp;</span>
+                </div>
+
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2510.01700" 
+                  class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Arxiv</span>
+                </a>
+              </span>
+
+               <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://vap-r.github.io" 
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+
+                <!-- HuggingFace Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/VaPR-UCLA/vapr-30k" 
+                  class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                    <p style="font-size:18px">&#x1F917;</p>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+
+              <!-- Models Link -->
+              <span class="link-block">
+                <a href="https://huggingface.co/VaPR-UCLA/models" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <p style="font-size:18px">🤖</p>
+                  </span>
+                  <span>Models</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+              <div class="item">
+               <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+                Abstract
+              </h2>
+               <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+               <p>
+                Preference finetuning methods like Direct Preference Optimization (DPO) with AI-generated feedback have shown promise in aligning Large Vision-Language Models (LVLMs) with human preferences. However, existing techniques overlook the prevalence of noise in synthetic preference annotations in the form of stylistic and length biases. To this end, we introduce a hard-negative response generation framework based on LLM-guided response editing, that produces rejected responses with targeted errors, maintaining stylistic and length similarity to the chosen ones. Using this framework, we develop the VaPR dataset, comprising 30K high-quality samples, to finetune three LVLM families: LLaVA-V1.5, Qwen2VL & Qwen2.5VL (2B-13B sizes). Our VaPR models deliver significant performance improvements across ten benchmarks, achieving average gains of 6.5% (LLaVA), 4.0% (Qwen2VL), and 1.5% (Qwen2.5VL), with notable improvements on reasoning tasks. A scaling analysis shows that performance consistently improves with data size, with LLaVA models benefiting even at smaller scales. Moreover, VaPR reduces the tendency to answer "Yes" in binary questions - addressing a common failure mode in LVLMs like LLaVA. Lastly, we show that the framework generalizes to open-source LLMs as editors, with models trained on VaPR-OS achieving ~99% of the performance of models trained on VaPR, which is synthesized using GPT-4o.
+               </p>
+             </h3>
+           </div>
+        </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Section header for image carousel data generation -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="item">
+        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+        VaPR Framework
+        </h2>
+      </div>
+    </div>
+    <br />
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="item">
+        <h3 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+        Motivation
+        </h3>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified is-size-5 pt-4 pb-4">
+          <p>
+            Existing preference optimization datasets for Large Vision Language Models (LVLMs) have shown to contain noise in the form of stylistic and length biases. To address this, we introduce a novel hard-negative response generation framework that utilizes LLM-guided response editing to create rejected responses with targeted errors, while maintaining stylistic and length similarity to the accepted ones. Leveraging this framework, we develop the VaPR dataset, which consists of 30K high-quality preference samples with chosen responses paired with hard-negative rejected responses.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="item">
+        <h3 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+        Data Generation and Statistics
+        </h3>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified is-size-5 pt-4 pb-4">
+          <p>
+            Three stages pipeline to generate 30K hard-negative preference pairs using LLaVA-v1.5-665K dataset. <strong>Stage 1:</strong> Filter out irrelevant samples (e.g., MCQs). <strong>Stage 2:</strong> Categorize remaining samples based on task. <strong>Stage 3:</strong> Use task-specific prompts (with optional penalty lists) to produce stylistically and length-wise similar but content-distinct negative responses.
+          </p>
+          <figure class="image is-inline-block mb-4">
+            <img src="static/images/datagen/datagen_pipeline.png" alt="Data Generation Pipeline" class="has-background-light" style="max-width: 800px; min-height: 300px;">
+          </figure>
+          <br />
+          <p align="center">
+            <strong>Task distribution of the VaPR dataset</strong> 
+          </p>
+          <div style="text-align: center;">
+            <figure class="image is-inline-block mb-4">
+              <img src="static/images/datagen/data_dist.png" alt="Data Distribution" class="has-background-light" style="max-width: 400px; min-height: 300px;" >
+            </figure>
+          </div>
+          <br />
+          <p>
+            Comparison of <strong>VaPR</strong> vs. HA-DPO, POVID, RLAIF-V, and CSR on stylistic similarity (measured via linguistic similarity using LD, i.e., Levenshtein distance) and length balance (token-length deltas). We report the % of cases where the chosen response is <span class="has-text-success">longer</span> (chosen > rejected) or <span class="has-text-danger">shorter</span> (rejected > chosen) across all samples, as well as, samples with short (<100 tokens), and long responses. We also report average token length deltas for <span class="has-text-success">(chosen > rejected)</span> and <span class="has-text-danger">(rejected > chosen)</span>. Lower Levenshtein distance and smaller token deltas indicate higher stylistic and length similarity, respectively. CSR includes only has long responses.
+            <br />
+            VaPR has the lowest Levenshtein distance and token length difference,
+            reinforcing the hard-negative nature of its rejections.
+          </p>
+
+          <figure class="image is-inline-block mb-4">
+            <img src="static/images/datagen/preference_dataset_cmp.png" alt="Preference Dataset Comparison" class="has-background-light" style="max-width: 600px; min-height: 300px;">
+          </figure>
+
+          <br />
+          <p>
+            In the illustration below, we show how VaPR-generated hard-negative responses reduce stylistic and length biases compared to biased rejections, giving examples of fine-grained perception and reasoning tasks like counting and spatial reasoning. We also include additional examples covering perturbations in other categories.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- Image carousel Data generation -->
+ <section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <!-- VaPR Hard Negatives (Counting Example) -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            VaPR vs biased preference data (style/length) 
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/counting_example.jpg" alt="Counting Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-dark">Instruction:</span> How many planes are visible in the image?</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> There are <span class="has-text-primary has-text-weight-bold">four</span> planes visible in the image.</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-info">VaPR Response:</span> There are <span class="has-text-primary has-text-weight-bold">six</span> planes visible in the image.</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-danger">Response with length bias:</span> <span class="has-text-danger">There are seven planes visible in the sky in the image, each leaving a bright white trail behind.</span></p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-warning-dark">Response with style bias:</span> <span class="has-text-warning-dark">Five planes can be seen in the image.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>Counting category example.</strong> VaPR generates subtle, targeted perturbations (shown in <span class="has-text-info has-text-weight-bold">blue</span>), while length-biased rejections add verbose descriptions and style-biased ones alter content structure.</p>
+          </h3>
+        </div>
+
+        <!-- VaPR Hard Negatives (Spatial Example) -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            VaPR vs biased preference data (style/length) 
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/spatial_example.jpg" alt="Spatial Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-dark">Instruction:</span> Where is the man standing in relation to the baby elephant in the water?</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> The man is standing <span class="has-text-primary has-text-weight-bold">next to</span> the baby elephant in the water.</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-info">VaPR Response:</span> The man is standing <span class="has-text-primary has-text-weight-bold">far away from</span> the baby elephant, near the edge of the water.</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-danger">Response with length bias:</span> <span class="has-text-danger">The man is standing far from the baby elephant, attempting to throw water using a bucket while standing at the edge of the water.</span></p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-warning-dark">Response with style bias:</span> <span class="has-text-warning-dark">The elephant is standing in the water, away from the man, who is on the shore.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>Spatial reasoning category example.</strong> VaPR generates subtle, targeted perturbations (shown in <span class="has-text-info has-text-weight-bold">blue</span>), while length-biased rejections add verbose descriptions and style-biased ones alter content structure.</p>
+          </h3>
+        </div>
+        
+        <!-- Object Perturbation Example -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            More Examples
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/object_example.jpg" alt="Object Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-dark">Instruction:</span> What type of airplane is displayed in the image?</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> The image displays a World War era airplane with a <span class="has-text-primary has-text-weight-bold">propeller</span> hanging in a museum.</p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-info">Rejected Response:</span> The image displays a World War era airplane with <span class="has-text-primary has-text-weight-bold">jet engines</span> hanging in a museum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>Object category example</strong></p>
+          </h3>
+        </div>
+
+        <!-- Color Perturbation Example -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            More Examples
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/color_example.jpg" alt="Color Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-dark">Instruction:</span> What are the colors of the flowers in the vase?</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> The colors of the flowers in the vase are <span class="has-text-primary has-text-weight-bold">red, green, and purple</span>.</p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-info">Rejected Response:</span> The colors of the flowers in the vase are <span class="has-text-primary has-text-weight-bold">yellow, blue, and orange</span>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>Color category example</strong></p>
+          </h3>
+        </div>
+        
+        <!-- Size Example -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            More Examples
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/size_example.jpg" alt="Size Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-dark">Instruction:</span> What is the size of the dog compared to the child?</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> The dog is described as <span class="has-text-primary has-text-weight-bold">large</span> in comparison to the child. This implies that the dog may be of a larger breed or perhaps a fully-grown adult dog.</p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-info">Rejected Response:</span> The dog is described as <span class="has-text-primary has-text-weight-bold">small</span> in comparison to the child. This implies that the dog may be a smaller breed or perhaps still a puppy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>Size category example</strong></p>
+          </h3>
+        </div>
+        
+        <!-- Background Example -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            More Examples
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/background_example.jpg" alt="Background Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-dark">Instruction:</span> What type of lighting is featured in the living room?</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> The living room features <span class="has-text-primary has-text-weight-bold">spot lighting</span>, which provides a focused illumination on specific areas or objects within the room.</p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-info">Rejected Response:</span> The living room features <span class="has-text-primary has-text-weight-bold">ambient lighting</span>, which provides a general, diffused illumination throughout the room.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>Background category example</strong></p>
+          </h3>
+        </div>
+        
+        <!-- Existence Example -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            More Examples
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/existence_example.jpg" alt="Existence Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-dark">Instruction:</span> Does the light say it is ok to walk?</p>
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> <span class="has-text-primary has-text-weight-bold">Yes</span>, the light indicates it's safe to walk.</p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-info">Rejected Response:</span> <span class="has-text-primary has-text-weight-bold">No</span>, the light says it's not safe to walk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>Existence category example</strong></p>
+          </h3>
+        </div>
+        
+        <!-- Referential VQA Example -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            More Examples
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/ref_vqa_example.jpg" alt="Referential VQA Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> The cheeseburger is described as <span class="has-text-primary has-text-weight-bold">massive</span> and containing <span class="has-text-primary has-text-weight-bold">double cheese layers</span>.</p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-info">Hard-negative Rejected Response:</span> The cheeseburger is described as <span class="has-text-primary has-text-weight-bold">small</span> and containing a <span class="has-text-primary has-text-weight-bold">single cheese layer</span>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>Referential VQA category example</strong></p>
+          </h3>
+        </div>
+        
+        <!--  Image Captioning Example -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            More Examples
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/caption_example.jpg" alt="Image Captioning Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> The image features a unique scene of a <span class="has-text-primary has-text-weight-bold">green jetfighter airplane</span> on display in an open area of the city. The airplane has <span class="has-text-primary has-text-weight-bold">white and pink accents</span> painted on its design, making it visually striking. It is situated in the middle of the road, with tall buildings surrounding the area.</p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-info">Hard-negative Rejected Response:</span> The image features a unique scene of a <span class="has-text-primary has-text-weight-bold">yellow jetfighter airplane</span> on display in an open area of the city. The airplane has <span class="has-text-primary has-text-weight-bold">purple and orange accents</span> painted on its design, making it visually striking. It is situated on the side of the road, with short buildings surrounding the area.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>Image captioning category example</strong></p>
+          </h3>
+        </div>
+        
+        <!-- General Reasoning Example -->
+        <div class="item">
+          <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+            More Examples
+          </h2>
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-8">
+              <div class="box p-4 m-2" style="border: 2px solid #3273dc; border-radius: 10px;">
+                <div class="has-text-centered mb-4">
+                  <figure class="image is-inline-block">
+                    <img src="static/images/datagen/reasoning_example.jpg" alt="General Reasoning Example" class="has-background-light" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;">
+                  </figure>
+                </div>
+                <div class="content is-size-6 has-text-left">
+                  <p class="mb-2"><span class="has-text-weight-bold has-text-success">Chosen Response:</span> A possible reason for the man taking a picture of the dirt cake could be that the cake is a <span class="has-text-primary has-text-weight-bold">unique and creative design</span>, which makes it worth capturing before it is served or shared. The photo with others to highlight the <span class="has-text-primary has-text-weight-bold">intricate and detailed decorations</span> on the cake.</p>
+                  <p class="mb-1"><span class="has-text-weight-bold has-text-info">Hard-negative Rejected Response:</span> A possible reason for the man taking a picture of the dirt cake could be that the cake is a <span class="has-text-primary has-text-weight-bold">rare and expensive design</span>, which makes it worth capturing before it is served or shared. The photo with others to highlight the <span class="has-text-primary has-text-weight-bold">intricate and sea-themed aspects</span> of the cake.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+            <p align="center"><strong>General reasoning category example</strong></p>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+    <br />
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="item">
+        <h3 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+        How Preference Data Effects Direct Preference Optimization (DPO)
+        </h3>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified is-size-5 pt-4 pb-4">
+          <p>
+            To understand how different preference datasets affect DPO training, we analyze two key metrics: reference model log-probabilities and reward accuracy during training. The quality and characteristics of preference pairs significantly impact the stability and effectiveness of the optimization process.
+          </p>
+          
+          <!-- Two figures side by side -->
+          <div class="columns is-centered pt-4 pb-4">
+            <div class="column is-6">
+              <figure class="image">
+                <img src="static/images/results/ref_logp_comparison.png" alt="Reference Log-Probs Comparison" class="has-background-light" style="width: 100%; object-fit: contain;">
+              </figure>
+              <p class="has-text-centered is-size-6 pt-2"><strong>Reference Log-Probabilities</strong></p>
+            </div>
+            <div class="column is-6">
+              <figure class="image">
+                <img src="static/images/results/reward_accuracy_plot.png" alt="DPO Reward Accuracy" class="has-background-light" style="width: 100%; object-fit: contain;">
+              </figure>
+              <p class="has-text-centered is-size-6 pt-2"><strong>DPO Reward Accuracy</strong></p>
+            </div>
+          </div>
+          
+          <p>
+            <strong>Reference Log-Probabilities Analysis:</strong> The corpus-level log p_ref(chosen vs. rejected) reveals distinct patterns across datasets. <span class="has-text-danger has-text-weight-bold">SIMA</span> shows nearly identical pairs with Δ≈0, indicating minimal difference between chosen and rejected responses. <span class="has-text-warning-dark has-text-weight-bold">POVID</span> exhibits very large differences (|Δ| large), suggesting overly dissimilar preference pairs. In contrast, <span class="has-text-success has-text-weight-bold">VaPR</span> demonstrates moderate separation, which is indicative of well-crafted hard negatives that provide meaningful learning signals without being trivially different.
+          </p>
+          
+          <p>
+            <strong>DPO Reward Accuracy During Training:</strong> The training dynamics further validate these observations. Models trained on <span class="has-text-danger has-text-weight-bold">SIMA</span> achieve only ~50% reward accuracy, indicating <span class="has-text-danger has-text-weight-bold">DPO collapse</span> where the model cannot distinguish between chosen and rejected responses. <span class="has-text-warning-dark has-text-weight-bold">POVID</span> leads to ~100% accuracy, suggesting <span class="has-text-warning-dark has-text-weight-bold">reward hacking</span> where the model exploits superficial differences rather than learning meaningful preferences. <span class="has-text-success has-text-weight-bold">VaPR</span> shows gradual improvement to ~90% without saturating, indicating better generalization from exposure to more challenging preference pairs.
+          </p>
+          
+          <p>
+            <strong>Key Insight:</strong> <span class="has-text-danger has-text-weight-bold">Very similar preference pairs lead to DPO collapse</span>, while <span class="has-text-warning-dark has-text-weight-bold">very dissimilar pairs result in reward hacking</span>. VaPR's hard negatives avoid both failure modes, enabling stable and effective preference optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="item">
+        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+        Main Results
+        </h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified is-size-5 pt-4 pb-4">
+          <p>
+            Performance comparison of LLaVA-v1.5-Instruct, Qwen2VL-Instruct, Qwen2.5VL-Instruct, SFT and DPO models finetuned on VaPR, and other preference datasets across 2B, 3B, 7B, and 13B parameter sizes on ten benchmarks. Higher scores indicate better performance across all benchmarks, with the highest score for each benchmark highlighted in <strong>bold</strong>. All models are evaluated using publicly available checkpoints, adhering to evaluation parameters prescribed by the benchmarks. <sup>&#8224;</sup> represents results that show statistically significant improvement via bootstrap resampling (95% CI).
+          </p>
+          </p>
+           <figure class="image is-inline-block">
+            <img src="static/images/results/main_results.png" alt="Main Results" class="has-background-light" style="max-width: 600px; min-height: 300px;">
+          </figure>
+          <p>
+          <strong>Key Takeaways:</strong>
+          </p>  
+          <ul>
+            <li>VaPR models beat baselines on most benchmarks, with gains of 7% (LLaVA-7B), 6% (LLaVA-13B), 5% (Qwen2VL-2B), 3% (Qwen2VL-7B), 2% (Qwen2.5VL-3B), and 1% (Qwen2.5VL-7B), especially in vision-centric and adversarial tasks, highlighting stronger visio-linguistic compositionality.</li>
+            <li>Improvements extend beyond perception and reasoning to textual and mathematical benchmarks, despite no explicit training, suggesting enhanced fine-grained perception and spatial reasoning.</li>
+            <li>Preference optimization outperforms supervised finetuning (SFT): while SFT can degrade performance due to overfitting on small datasets, DPO with carefully constructed preference pairs yields robust and generalizable improvements.</li>
+            <li>Overall, the gains arise from the preference signal rather than dataset size alone, showing that preference finetuning is more effective than standard SFT for alignment and reasoning.</li>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="item">
+        <h3 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+        Data Scaling analysis
+        </h3>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified is-size-5 pt-4 pb-4">
+          <p>
+          We analyze the effect of dataset size on performance using 3K, 10K, and 30K samples from VaPR. As shown illustrated in the figure below (X-axis spacing between 3K, 10K, and 30K is not uniform), all models improve with more data. LLaVA-VaPR shows large gains even at 3K, but with diminishing returns at higher scales. Qwen2VL and Qwen2.5VL improve less at 3K yet benefit more from larger datasets, reflecting their stronger pretrained priors compared to LLaVA-v1.5.
+          </p>
+          <figure class="image is-inline-block">
+            <img src="static/images/results/data_scale.png" alt="Main Results" class="has-background-light" style="max-width: 600px; min-height: 300px;">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="item">
+        <h3 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+        VaPR models do not overconfidently say "Yes" to "Yes/No" questions
+        </h3>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified is-size-5 pt-4 pb-4">
+          <p>
+          Large vision-language models (LVLMs) tend to favor "Yes" over "No" in binary questions. On NaturalBench, an adversarial benchmark, base SFT models like LLaVA-v1.5 and Qwen variants often answer "Yes" even when the correct answer is "No." VaPR models reduce this bias, with LLaVA-VaPR 13B showing the strongest shift toward accurate "No" responses. This improvement reflects enhanced perception, reasoning, and visio-linguistic compositionality. The following figure captures this phenomenon, where dotted rectangles highlight incorrect "Yes" (red) and "No" (yellow) predictions, illustrating reduced "Yes" bias after preference finetuning.
+          <figure class="image is-inline-block">
+            <img src="static/images/results/naturalbench_yes_no.png" alt="Main Results" class="has-background-light" style="max-width: 600px; min-height: 300px;">
+          </figure>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="item">
+        <h3 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+        VaPR-OS: Ablation Study using open-source LLM Editor
+        </h3>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified is-size-5 pt-4 pb-4">
+          <p>
+          We conduct an ablation with Qwen3-32B as an open-source editor, creating VaPR-OS from the same 10K subset. VaPR-OS shows comparable hard-negative characteristics to VaPR (token length gap 6 vs. 3; Levenshtein distance 10 vs. 6), and models trained on it reach ~99% of the performance of their GPT-4o-based counterparts, while still outperforming base instruct models. These results demonstrate that VaPR generalizes effectively to open-source editors, making it accessible for broader research and applications. The following table summarizes these findings for 3 models LLaVA-v1.5-7B, Qwen2VL-2B, and Qwen2.5VL-3B.
+          </p>
+          <figure class="image is-inline-block">
+            <img src="static/images/results/vapr_os.png" alt="Main Results" class="has-background-light" style="max-width: 600px; min-height: 200px;">
+          </figure>
+
+          <p>
+            <strong>We refer the readers to our <a href="https://arxiv.org/abs/2510.01700" target="_blank">paper</a> for more details on experiments, analyses, and ablations.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    
+  </div>
+</section>
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+<div class="container is-max-desktop content">
+<h2 class="title">BibTeX</h2>
+<pre><code>@inproceedings{
+wadhawan2025vapr,
+title={Va{PR} - Vision-language Preference alignment for Reasoning},
+author={Rohan Wadhawan and Fabrice Y Harel-Canada and Zi-Yi Dou and Suhaila Shakiah and Robinson Piramuthu and Nanyun Peng},
+booktitle={Second Conference on Language Modeling},
+year={2025},
+url={https://openreview.net/forum?id=uBAubFwymy}
+}</code>
+</div>
+</section>
+
+
+<!--End BibTex citation -->
+
+<section>
+  <div class="columns is-centered has-text-centered">
+  <div class="section" id="org-banners" style="display: flex">
+  <img class="center-block org-banner" src="static/images/ucla.png" style="width:256px;height:100px;">
+  </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p style="color:gray;font-size:9.9px;">
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+  </html>
